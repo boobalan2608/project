@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trivago.css">
+    <title>trivago.in&nbsp;- Compare hotel prices worldwide</title>
+</head>
+
+<body>
+    <div class="trivago">
+        <!-- Header Navigation -->
+        <div class="head-navigation">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="114" height="32" viewBox="0 0 114 32"
+                    data-testid="header-hero-logo" class="">
+                    <g clip-path="url(#Logo_default_svg__a)">
+                        <path fill="#E32851"
+                            d="M38.637 7.434h-4.913a.255.255 0 00-.255.255v15.907c0 .14.114.255.255.255h4.913c.14 0 .255-.114.255-.255V7.689a.255.255 0 00-.255-.255z">
+                        </path>
+                        <path fill="#FF932C"
+                            d="M52.833 7.6L49.6 16.21a.057.057 0 01-.107 0L46.231 7.6a.255.255 0 00-.239-.165h-5.37a.255.255 0 00-.237.351l6.46 15.907c.039.096.133.16.236.16h4.724a.255.255 0 00.237-.16L58.53 7.786a.255.255 0 00-.237-.352h-5.222a.255.255 0 00-.239.166z">
+                        </path>
+                        <path fill="#0088D9"
+                            d="M104.344 7.185c-5.126 0-8.86 3.615-8.86 8.476 0 4.86 3.734 8.475 8.86 8.475 5.068 0 8.861-3.645 8.861-8.475 0-4.86-3.764-8.476-8.861-8.476zm0 12.328c-2.015 0-3.348-1.541-3.348-3.853 0-2.31 1.333-3.852 3.348-3.852 1.986 0 3.349 1.54 3.349 3.853 0 2.281-1.363 3.852-3.349 3.852z">
+                        </path>
+                        <path fill="#E32851"
+                            d="M31.673 7.355a2.833 2.833 0 00-.514-.121c-.314-.05-3.647-.424-5.501 2.063-.033.044-.103.02-.103-.034V7.689a.255.255 0 00-.255-.255h-4.913a.255.255 0 00-.255.255v15.907c0 .14.114.255.255.255H25.3a.255.255 0 00.255-.255V17.69c0-4.416 2.044-5.514 4.06-5.514.237 0 .926-.001 1.9.268a.255.255 0 00.322-.245V7.594a.253.253 0 00-.164-.239zM36.18 0c-1.713 0-3.102 1.339-3.102 2.99 0 1.651 1.39 2.99 3.103 2.99 1.713 0 3.102-1.339 3.102-2.99 0-1.651-1.39-2.99-3.102-2.99z">
+                        </path>
+                        <path fill="#FF932C"
+                            d="M75.341 7.434H70.43a.255.255 0 00-.255.255v1.565c0 .06-.083.08-.109.024-1.774-3.717-12.282-2.994-12.282 6.364 0 8.748 8.978 10.306 12.29 6.645.036-.04.1-.015.1.038v1.27c0 .142.115.256.256.256h4.912a.255.255 0 00.256-.255V7.689a.255.255 0 00-.255-.255zM66.77 19.495c-2.164 0-3.672-1.508-3.672-3.836s1.508-3.869 3.672-3.869c2.197 0 3.672 1.574 3.672 3.87 0 2.294-1.475 3.835-3.672 3.835z">
+                        </path>
+                        <path fill="#0088D9"
+                            d="M93.893 7.434h-4.912a.255.255 0 00-.255.255v1.564c0 .062-.083.08-.11.025-1.78-3.764-11.567-2.82-11.567 5.89 0 8.54 8.92 9.243 11.58 6.759a.057.057 0 01.096.042v.769c-.068 3.629-4.614 5.2-6.924 2.443a.255.255 0 00-.334-.05l-4.14 2.677a.257.257 0 00-.066.368c5.283 7.219 16.802 3.548 16.887-5.422V7.69a.255.255 0 00-.255-.255zm-8.101 11.201c-1.956 0-3.32-1.363-3.32-3.466 0-2.104 1.364-3.497 3.32-3.497 1.985 0 3.318 1.422 3.318 3.497 0 2.074-1.333 3.466-3.318 3.466z">
+                        </path>
+                        <path fill="#E32851"
+                            d="M18.424 14.867h-4.92a.26.26 0 00-.254.237 3.92 3.92 0 01-3.907 3.61c-2.472 0-3.472-2.1-3.472-2.1a3.923 3.923 0 01-.448-1.749c0-.02.011-.04.03-.05l1.407-.777 8.894-4.919a.425.425 0 00.22-.372V3.46a.255.255 0 00-.38-.224L5.509 8.814a.057.057 0 01-.086-.05V.452a.255.255 0 00-.394-.214L.194 3.368A.425.425 0 000 3.727v11.14a9.343 9.343 0 0018.68.268.257.257 0 00-.256-.268z">
+                        </path>
+                    </g>
+                    <defs>
+                        <clipPath id="Logo_default_svg__a">
+                            <path fill="#fff" d="M0 0h113.205v32H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="nav-link">
+                <h4><span class="Icon_wrapper__B6IoS" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" class="Icon_icon__1R9KC">
+                            <path
+                                d="M20.42 4.82A5.23 5.23 0 0016.5 3 5.37 5.37 0 0012 5.58 5.37 5.37 0 007.5 3a5.23 5.23 0 00-3.92 1.82A6.35 6.35 0 002 9.07v.28c0 5.42 7.25 10.18 9.47 11.51a1 1 0 001 0C14.74 19.53 22 14.77 22 9.35v-.22-.06a6.35 6.35 0 00-1.58-4.25zM21 9.18v.17c0 4.94-7.07 9.5-9 10.65-1.92-1.15-9-5.71-9-10.65v-.17a.41.41 0 000-.11A4.81 4.81 0 017.5 4a4.39 4.39 0 013.66 2.12L12 7.44l.84-1.32A4.39 4.39 0 0116.5 4 4.81 4.81 0 0121 9.07a.41.41 0 000 .11z"
+                                fill="currentColor"></path>
+                        </svg></span>Favorite</h4>
+                <h4><span cla ss="Icon_wrapper__B6IoS" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24" width="24" viewBox="0 0 24 24" class="Icon_icon__1R9KC">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                d="M12 21.5V21v.5c-5.238 0-9.5-4.262-9.5-9.5H3h-.5c0-5.238 4.262-9.5 9.5-9.5V3v-.5c5.238 0 9.5 4.262 9.5 9.5H21h.5c0 5.238-4.262 9.5-9.5 9.5zm-6.389-3.898a8.5 8.5 0 005.09 2.798 15.327 15.327 0 01-2.592-3.943c-1.05.345-1.896.78-2.498 1.145zm10.25-1.078A15.355 15.355 0 0113.3 20.4a8.49 8.49 0 005.061-2.77 15.22 15.22 0 00-2.5-1.107zm-3.361-.655v3.926a14.328 14.328 0 002.394-3.557 12.39 12.39 0 00-2.394-.369zm-3.421.312a14.329 14.329 0 002.421 3.614v-3.938c-.876.026-1.687.148-2.421.324zm7.165-.586c.884.303 1.8.71 2.743 1.241a8.451 8.451 0 001.498-4.336h-3.542a11.783 11.783 0 01-.699 3.095zM3.514 12.5a8.454 8.454 0 001.48 4.308c.645-.4 1.576-.89 2.738-1.28a11.717 11.717 0 01-.676-3.028H3.515zm8.986 2.362c.88.044 1.813.181 2.788.442a10.8 10.8 0 00.652-2.804H12.5v2.362zM8.06 12.5c.086.952.31 1.873.63 2.745a12.903 12.903 0 012.81-.393V12.5H8.06zm8.918-1h3.507a8.443 8.443 0 00-1.484-4.315 13.87 13.87 0 01-2.55 1.207c.337 1.004.514 2.04.527 3.106v.002zm-4.478 0h3.478a9.088 9.088 0 00-.485-2.81c-.9.245-1.904.416-2.993.449V11.5zm-4.479 0H11.5V9.13a13.308 13.308 0 01-2.977-.487 9.094 9.094 0 00-.502 2.857zm-4.506 0H7.02v-.003c.015-1.084.197-2.138.547-3.158a16.469 16.469 0 01-2.555-1.175A8.444 8.444 0 003.515 11.5zM12.5 4.14v4.025c.946-.03 1.825-.173 2.63-.387-.581-1.27-1.459-2.485-2.63-3.638zM8.897 7.72c.909.25 1.778.387 2.603.432V4.14C10.347 5.275 9.48 6.47 8.897 7.72zm4.49-4.107c1.204 1.221 2.107 2.512 2.708 3.865.878-.313 1.645-.7 2.288-1.085a8.498 8.498 0 00-4.995-2.78zM5.64 6.368c.787.436 1.553.78 2.295 1.046.6-1.33 1.494-2.599 2.678-3.8A8.497 8.497 0 005.64 6.367z">
+                            </path>
+                        </svg></span>EN</h4>
+                <h4><span class="Icon_wrapper__B6IoS" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" class="Icon_icon__1R9KC">
+                            <path fill="transparent" d="M0 0h24v24H0z"></path>
+                            <path
+                                d="M17.129 19.038a5.363 5.363 0 00-1.895-2.87A5.274 5.274 0 0012 15.058c-1.17 0-2.307.39-3.234 1.11a5.362 5.362 0 00-1.895 2.87"
+                                stroke="#0A1121" stroke-linecap="round" stroke-linejoin="round" fill="transparent">
+                            </path>
+                            <path d="M21 12C21 0 3 0 3 12s18 12 18 0z" stroke="#0A1121" stroke-linecap="round"
+                                stroke-linejoin="round" fill="transparent"></path>
+                            <path
+                                d="M11.998 12.811c1.939 0 3.03-1.1 3.03-3.058 0-1.957-1.091-3.059-3.03-3.059-1.938 0-3.028 1.102-3.028 3.06 0 1.957 1.09 3.057 3.028 3.057z"
+                                stroke="#0A1121" stroke-linecap="round" stroke-linejoin="round" fill="transparent">
+                            </path>
+                        </svg></span>Log in </h4>
+                <h4><span class="Icon_wrapper__B6IoS" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" class="Icon_icon__1R9KC">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-linecap="round"></path>
+                        </svg></span>Menu</h4>
+            </div>
+        </div>
+        <!-- underline -->
+        <hr>
+        <!-- Description -->
+        <div class="tri-desc">
+            <h1>We compare hotel prices from 100s of sites</h1>
+            <span>We’ll do the searching. You do the saving.</span>
+        </div>
+        <!-- Trip Search Box -->
+
+        <div class="tri-trip-search-box">
+            <div class="trip-desti">
+                <div class="search-logo">
+                    <span class="Icon_wrapper__B6IoS Icon_centered__WVTjD Icon_full__sdZ0N" aria-hidden="true"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="Icon_icon__1R9KC">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                                stroke-width="2">
+                                <path d="M10 3a7 7 0 107 7 7 7 0 00-7-7zM21 21l-6-6" vector-effect="non-scaling-stroke">
+                                </path>
+                            </g>
+                        </svg></span>
+                </div>
+                <div class="desti-info">
+                    <span>Destination</span>
+                    <h3>Where to?</h3>
+                </div>
+            </div>
+            <div class="trip-chk-in">
+                <div class="calen-logo">
+                    <span class="Icon_wrapper__B6IoS SeachFormAction_icon__A8b2w" aria-hidden="true"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="Icon_icon__1R9KC">
+                            <g fill="currentColor">
+                                <path
+                                    d="M19 5h-1a1 1 0 00-2 0H8a1 1 0 00-2 0H5a2 2 0 00-2 2v11a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2zm1 13a1 1 0 01-1 1H5a1 1 0 01-1-1V9h16zm0-10H4V7a1 1 0 011-1h14a1 1 0 011 1z">
+                                </path>
+                                <circle cx="7.5" cy="12.5" r="1.5"></circle>
+                                <path
+                                    d="M19 5h-1a1 1 0 00-2 0H8a1 1 0 00-2 0H5a2 2 0 00-2 2v11a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2zm1 13a1 1 0 01-1 1H5a1 1 0 01-1-1V9h16zm0-10H4V7a1 1 0 011-1h14a1 1 0 011 1z">
+                                </path>
+                                <circle cx="7.5" cy="12.5" r="1.5"></circle>
+                            </g>
+                        </svg></span>
+                </div>
+                <div class="chk-in-info">
+                    <span>Check in</span><br>
+                    <h3>-- / -- / ----</h3>
+                </div>
+            </div>
+            <div class="trip-chk-out">
+                <span>Check out</span>
+                <h3>-- / -- / ----</h3>
+            </div>
+            <div class="trip-guest">
+                <div class="guest-logo">
+                    <span class="Icon_wrapper__B6IoS SeachFormAction_icon__A8b2w" aria-hidden="true"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="Icon_icon__1R9KC">
+                            <g fill="currentColor">
+                                <path
+                                    d="M13.13 12.14a4.5 4.5 0 10-7.26 0A5 5 0 002 17a3 3 0 003 3h9a3 3 0 003-3 5 5 0 00-3.87-4.86zM9.5 6a3.49 3.49 0 012.44 6A3.5 3.5 0 016 9.5 3.5 3.5 0 019.5 6zM14 19H5a2 2 0 01-2-2 4 4 0 013.74-4 4.41 4.41 0 005.52 0A4 4 0 0116 17a2 2 0 01-2 2z">
+                                </path>
+                                <path
+                                    d="M19.31 10.24A3.93 3.93 0 0020 8a4 4 0 00-6.94-2.69 5.87 5.87 0 01.7.71A3 3 0 1116 11a2.91 2.91 0 01-1.15-.23v.11a4.5 4.5 0 01-.28.83A4 4 0 0016 12a3.94 3.94 0 002.55-.94A3 3 0 0121 14a1 1 0 01-1 1h-2.35a6.67 6.67 0 01.26 1H20a2 2 0 002-2 4 4 0 00-2.69-3.76z">
+                                </path>
+                            </g>
+                        </svg></span>
+                </div>
+                <div class="guest-room-info">
+                    <span>Guest and rooms</span>
+                    <h4>2 Guests , 1 Room</h4>
+                </div>
+            </div>
+            <div class="search-btn">
+                <button>Search</button>
+            </div>
+        </div>
+        <!-- Advertisment Bar -->
+        <div class="tri-advertisment-bar">
+            <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/395.png" alt="">
+            <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/3340.png" alt="">
+            <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/626.png" alt="">
+            <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/2192.png" alt="">
+            <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/14.png" alt="">
+            <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/634.png" alt="">
+            <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/2452.png" alt="">
+            <span>100s+ more</span>
+        </div>
+
+        <!-- Booking Portal -->
+
+        <div class="tri-booking-portal">
+            <div class="booking-bg">
+            </div>
+            <!-- Background theme -->
+            <div class="booking-bg-theme"></div>
+            <h1>Discover the best time to book your next stay</h1>
+            <div class="booking-schedule">
+                <div class="booking-loca">
+                    <button>Mumbai</button>
+                    <button>Delhi</button>
+                    <button>Jaipur</button>
+                    <button>Udaipur</button>
+                    <button>Bangaluru</button>
+                    <button>Dubai</button>
+                    <button>Lonavala</button>
+                    <button>Chennai</button>
+                    <button>Punjab</button>
+                </div>
+                <span>Prices are based on the average price range for 3-star hotels per night.</span>
+                <div class="schedule-months">
+                    <div class="month-price-schedule">
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                    </div>
+                    <div class="month-price-schedule">
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                        <div class="months-list">
+                            <h4>September</h4>
+                            <h5>₹2000 - ₹4000 ></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hotel suggesstion -->
+        <div class="tri-hotels">
+            <h1>Take a dip at these top-rated hotels</h1>
+            <div class="hotel-names">
+                <span>United Arab Emirates</span>
+                <span>Spain</span>
+                <span>Italy</span>
+            </div>
+
+            <div class="hotel-list">
+                <div class="hotel-item">
+                    <img class="E8KWOr"
+                        src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/partner-images/33/09/0e4fb0365e93ab9e251b574969ccaac4877d95a05ec668372e9d97b919dd.jpeg"
+                        srcset="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/partner-images/33/09/0e4fb0365e93ab9e251b574969ccaac4877d95a05ec668372e9d97b919dd.jpeg 1x, https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_534,q_40,w_800/partner-images/33/09/0e4fb0365e93ab9e251b574969ccaac4877d95a05ec668372e9d97b919dd.jpeg 2x"
+                        draggable="false" data-testid="accommodation-main-image" decoding="async" itemprop="photo"
+                        alt="independent-hotel">
+                    <div class="hotel-desc">
+
+                        <h2>Evenia Zoraida Resort</h2>
+                        <p>8 - 6 Excellent (6869)</p>
+                    </div>
+                    <div class="hotel-loc">
+
+                        <span class="Icon_wrapper__B6IoS Icon_xs__aPP1I ItemOverview_locationIcon__MViEd"
+                            aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" class="Icon_icon__1R9KC">
+                                <path
+                                    d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                        <p>Roquetas de Mar</p>
+                    </div>
+                    <div class="hotel-feature">
+                        <div class="feature-item">
+
+                            <span class="Ji89fk xHuPmg T5w4DJ" style="color: #0079c2;" aria-hidden="true"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="GuAJkS">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M15 14a2 2 0 00-2 2 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 1 1 0 012 0 .5.5 0 001 0 2 2 0 00-2-2zM10.5 18.5a.5.5 0 00-.5.5 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 .5.5 0 00-.5-.5zM13.5 18.5a.5.5 0 01.5.5 1 1 0 002 0 2 2 0 014 0 .5.5 0 01-1 0 1 1 0 00-2 0 2 2 0 01-4 0 .5.5 0 01.5-.5zM16.5 2A1.5 1.5 0 0015 3.5V7H8V3.5a.5.5 0 011 0v1a.5.5 0 001 0v-1a1.5 1.5 0 00-3 0v9a.5.5 0 001 0V11h7v1.5a.5.5 0 001 0v-9a.5.5 0 011 0v1a.5.5 0 001 0v-1A1.5 1.5 0 0016.5 2zM8 10V8h7v2z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <b>Pool</b>
+                        </div>
+                        <div class="feature-item">
+
+                            <span class="Icon_wrapper__B6IoS Icon_m__qOPUh AmenitiesSection_icon__K6tTR"
+                                style="color: #0079c2;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" class="Icon_icon__1R9KC">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M12 12c3 0 5 2.5 5 6.22 0 1.7-.26 1.78-.71 1.78a3.65 3.65 0 01-1.49-.68 5.92 5.92 0 00-2.8-1.1 5.68 5.68 0 00-2.78 1.11 3.63 3.63 0 01-1.47.67c-.46 0-.75-.09-.75-1.78C7 14.5 9 12 12 12m0-1c-3.53 0-6 3-6 7.22C6 19.26 6 21 7.75 21a4.11 4.11 0 002-.82 5.05 5.05 0 012.26-1 5.29 5.29 0 012.29 1 4.14 4.14 0 002 .82c1.7 0 1.7-1.67 1.7-2.78C18 14 15.53 11 12 11zM4.18 10a1.91 1.91 0 011.65 1.11 1.52 1.52 0 01.08 1.21 1.09 1.09 0 01-.64.6 1.33 1.33 0 01-.45.08 1.91 1.91 0 01-1.65-1.11 1.52 1.52 0 01-.08-1.21 1.09 1.09 0 01.64-.6 1.33 1.33 0 01.45-.08m0-1a2.12 2.12 0 00-.79.14 2.25 2.25 0 00-1.13 3.18A2.92 2.92 0 004.82 14a2.12 2.12 0 00.79-.14 2.25 2.25 0 001.13-3.18A2.92 2.92 0 004.18 9zM8.38 5A1.87 1.87 0 0110 6.67 1.91 1.91 0 018.84 9h-.22A1.87 1.87 0 017 7.33 1.91 1.91 0 018.16 5h.22m0-1a1.58 1.58 0 00-.43 0 2.86 2.86 0 00-1.89 3.52A2.82 2.82 0 008.62 10a1.58 1.58 0 00.43 0 2.86 2.86 0 001.89-3.47A2.82 2.82 0 008.38 4zM19.82 10a1.33 1.33 0 01.45.08 1.09 1.09 0 01.64.6 1.52 1.52 0 01-.08 1.21A1.91 1.91 0 0119.18 13a1.33 1.33 0 01-.45-.08 1.09 1.09 0 01-.64-.6 1.52 1.52 0 01.08-1.21A1.91 1.91 0 0119.82 10m0-1a2.92 2.92 0 00-2.56 1.68 2.25 2.25 0 001.13 3.18 2.12 2.12 0 00.79.14 2.92 2.92 0 002.56-1.68 2.25 2.25 0 00-1.13-3.18 2.12 2.12 0 00-.79-.14zM15.62 5h.22A1.91 1.91 0 0117 7.33 1.87 1.87 0 0115.38 9h-.22A1.91 1.91 0 0114 6.67 1.87 1.87 0 0115.62 5m0-1a2.82 2.82 0 00-2.56 2.48A2.86 2.86 0 0015 10a1.58 1.58 0 00.43.05 2.82 2.82 0 002.56-2.48A2.86 2.86 0 0016.1 4.1a1.58 1.58 0 00-.43 0z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <b>Pet-Friendly</b>
+                        </div>
+                    </div>
+                    <div class="hotel-price-btn">
+                        <button>Check Price</button>
+                    </div>
+                </div>
+                <div class="hotel-item">
+                    <img class="E8KWOr"
+                        src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/partner-images/81/e3/c79e39d7ac39a1303e3dc7cba53748d6271d62e583def1f063e15f5e7f1e.jpeg"
+                        srcset="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/partner-images/81/e3/c79e39d7ac39a1303e3dc7cba53748d6271d62e583def1f063e15f5e7f1e.jpeg 1x, https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_534,q_40,w_800/partner-images/81/e3/c79e39d7ac39a1303e3dc7cba53748d6271d62e583def1f063e15f5e7f1e.jpeg 2x"
+                        draggable="false" data-testid="accommodation-main-image" decoding="async" itemprop="photo"
+                        alt="independent-hotel">
+                    <div class="hotel-desc">
+
+                        <h2>Yurbban Passage Hotel </h2>
+                        <p>6 -8 Very Good (6869)</p>
+                    </div>
+                    <div class="hotel-loc">
+
+                        <span class="Icon_wrapper__B6IoS Icon_xs__aPP1I ItemOverview_locationIcon__MViEd"
+                            aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" class="Icon_icon__1R9KC">
+                                <path
+                                    d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                        <p>London</p>
+                    </div>
+                    <div class="hotel-feature">
+                        <div class="feature-item">
+
+                            <span class="Ji89fk xHuPmg T5w4DJ" style="color: #0079c2;" aria-hidden="true"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="GuAJkS">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M15 14a2 2 0 00-2 2 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 1 1 0 012 0 .5.5 0 001 0 2 2 0 00-2-2zM10.5 18.5a.5.5 0 00-.5.5 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 .5.5 0 00-.5-.5zM13.5 18.5a.5.5 0 01.5.5 1 1 0 002 0 2 2 0 014 0 .5.5 0 01-1 0 1 1 0 00-2 0 2 2 0 01-4 0 .5.5 0 01.5-.5zM16.5 2A1.5 1.5 0 0015 3.5V7H8V3.5a.5.5 0 011 0v1a.5.5 0 001 0v-1a1.5 1.5 0 00-3 0v9a.5.5 0 001 0V11h7v1.5a.5.5 0 001 0v-9a.5.5 0 011 0v1a.5.5 0 001 0v-1A1.5 1.5 0 0016.5 2zM8 10V8h7v2z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <b>Pool</b>
+                        </div>
+                        <div class="feature-item">
+
+                            <span class="Icon_wrapper__B6IoS Icon_m__qOPUh AmenitiesSection_icon__K6tTR"
+                                style="color: #0079c2;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" class="Icon_icon__1R9KC">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M12 12c3 0 5 2.5 5 6.22 0 1.7-.26 1.78-.71 1.78a3.65 3.65 0 01-1.49-.68 5.92 5.92 0 00-2.8-1.1 5.68 5.68 0 00-2.78 1.11 3.63 3.63 0 01-1.47.67c-.46 0-.75-.09-.75-1.78C7 14.5 9 12 12 12m0-1c-3.53 0-6 3-6 7.22C6 19.26 6 21 7.75 21a4.11 4.11 0 002-.82 5.05 5.05 0 012.26-1 5.29 5.29 0 012.29 1 4.14 4.14 0 002 .82c1.7 0 1.7-1.67 1.7-2.78C18 14 15.53 11 12 11zM4.18 10a1.91 1.91 0 011.65 1.11 1.52 1.52 0 01.08 1.21 1.09 1.09 0 01-.64.6 1.33 1.33 0 01-.45.08 1.91 1.91 0 01-1.65-1.11 1.52 1.52 0 01-.08-1.21 1.09 1.09 0 01.64-.6 1.33 1.33 0 01.45-.08m0-1a2.12 2.12 0 00-.79.14 2.25 2.25 0 00-1.13 3.18A2.92 2.92 0 004.82 14a2.12 2.12 0 00.79-.14 2.25 2.25 0 001.13-3.18A2.92 2.92 0 004.18 9zM8.38 5A1.87 1.87 0 0110 6.67 1.91 1.91 0 018.84 9h-.22A1.87 1.87 0 017 7.33 1.91 1.91 0 018.16 5h.22m0-1a1.58 1.58 0 00-.43 0 2.86 2.86 0 00-1.89 3.52A2.82 2.82 0 008.62 10a1.58 1.58 0 00.43 0 2.86 2.86 0 001.89-3.47A2.82 2.82 0 008.38 4zM19.82 10a1.33 1.33 0 01.45.08 1.09 1.09 0 01.64.6 1.52 1.52 0 01-.08 1.21A1.91 1.91 0 0119.18 13a1.33 1.33 0 01-.45-.08 1.09 1.09 0 01-.64-.6 1.52 1.52 0 01.08-1.21A1.91 1.91 0 0119.82 10m0-1a2.92 2.92 0 00-2.56 1.68 2.25 2.25 0 001.13 3.18 2.12 2.12 0 00.79.14 2.92 2.92 0 002.56-1.68 2.25 2.25 0 00-1.13-3.18 2.12 2.12 0 00-.79-.14zM15.62 5h.22A1.91 1.91 0 0117 7.33 1.87 1.87 0 0115.38 9h-.22A1.91 1.91 0 0114 6.67 1.87 1.87 0 0115.62 5m0-1a2.82 2.82 0 00-2.56 2.48A2.86 2.86 0 0015 10a1.58 1.58 0 00.43.05 2.82 2.82 0 002.56-2.48A2.86 2.86 0 0016.1 4.1a1.58 1.58 0 00-.43 0z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <b>Pet-Friendly</b>
+                        </div>
+                        <div class="feature-item">
+                            <span class="Ji89fk xHuPmg T5w4DJ" style="color: #0079c2;" aria-hidden="true"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="GuAJkS">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M12 6.6c1.43 1.87 3 4.33 3 5.4a3 3 0 01-6 0c0-1.07 1.57-3.53 3-5.4M12 5s-4 4.79-4 7a4 4 0 008 0c0-2.21-4-7-4-7z">
+                                        </path>
+                                        <path
+                                            d="M17 12.53a5.23 5.23 0 01-.21 1C19.43 14.12 21 15.18 21 16c0 1.22-3.51 3-9 3s-9-1.78-9-3c0-.82 1.57-1.88 4.26-2.5a5.23 5.23 0 01-.21-1c-3 .69-5 2-5 3.47 0 2.21 4.48 4 10 4s10-1.79 10-4C22 14.51 20 13.22 17 12.53z">
+                                        </path>
+                                        <path
+                                            d="M17.83 16c-.67.42-2.69 1-5.83 1s-5.16-.58-5.83-1a6.79 6.79 0 012.12-.68 5.1 5.1 0 01-.63-.89C6 14.8 5 15.36 5 16c0 1.1 3.13 2 7 2s7-.9 7-2c0-.64-1-1.2-2.66-1.57a5.1 5.1 0 01-.63.89 6.79 6.79 0 012.12.68z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <b>Spa</b>
+                        </div>
+                    </div>
+                    <div class="hotel-price-btn">
+                        <button>Check Price</button>
+                    </div>
+                </div>
+                <div class="hotel-item">
+                    <img class="E8KWOr"
+                        src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/partner-images/d8/39/ff399ada347a9e5be7eb4f918e5d8f006a2696d4e99317ed23e6778c4942.jpeg"
+                        srcset="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/partner-images/d8/39/ff399ada347a9e5be7eb4f918e5d8f006a2696d4e99317ed23e6778c4942.jpeg 1x, https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_534,q_40,w_800/partner-images/d8/39/ff399ada347a9e5be7eb4f918e5d8f006a2696d4e99317ed23e6778c4942.jpeg 2x"
+                        draggable="false" data-testid="accommodation-main-image" decoding="async" itemprop="photo"
+                        alt="independent-hotel">
+                    <div class="hotel-desc">
+
+                        <h2>Vida Creek Harbour</h2>
+                        <p>9.6 - Excellent (6869)</p>
+                    </div>
+                    <div class="hotel-loc">
+
+                        <span class="Icon_wrapper__B6IoS Icon_xs__aPP1I ItemOverview_locationIcon__MViEd"
+                            aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" class="Icon_icon__1R9KC">
+                                <path
+                                    d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                        <p>Newyork</p>
+                    </div>
+                    <div class="hotel-feature">
+                        <div class="feature-item">
+
+                            <span class="Ji89fk xHuPmg T5w4DJ" style="color: #0079c2;" aria-hidden="true"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="GuAJkS">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M15 14a2 2 0 00-2 2 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 1 1 0 012 0 .5.5 0 001 0 2 2 0 00-2-2zM10.5 18.5a.5.5 0 00-.5.5 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 .5.5 0 00-.5-.5zM13.5 18.5a.5.5 0 01.5.5 1 1 0 002 0 2 2 0 014 0 .5.5 0 01-1 0 1 1 0 00-2 0 2 2 0 01-4 0 .5.5 0 01.5-.5zM16.5 2A1.5 1.5 0 0015 3.5V7H8V3.5a.5.5 0 011 0v1a.5.5 0 001 0v-1a1.5 1.5 0 00-3 0v9a.5.5 0 001 0V11h7v1.5a.5.5 0 001 0v-9a.5.5 0 011 0v1a.5.5 0 001 0v-1A1.5 1.5 0 0016.5 2zM8 10V8h7v2z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <b>Pool</b>
+                        </div>
+                        <div class="feature-item">
+
+                            <span class="Ji89fk xHuPmg T5w4DJ" style="color: #0079c2;" aria-hidden="true"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="GuAJkS">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M13.13 12.14a4.5 4.5 0 10-7.26 0A5 5 0 002 17a3 3 0 003 3h9a3 3 0 003-3 5 5 0 00-3.87-4.86zM9.5 6a3.49 3.49 0 012.44 6A3.5 3.5 0 016 9.5 3.5 3.5 0 019.5 6zM14 19H5a2 2 0 01-2-2 4 4 0 013.74-4 4.41 4.41 0 005.52 0A4 4 0 0116 17a2 2 0 01-2 2z">
+                                        </path>
+                                        <path
+                                            d="M19.31 10.24A3.93 3.93 0 0020 8a4 4 0 00-6.94-2.69 5.87 5.87 0 01.7.71A3 3 0 1116 11a2.91 2.91 0 01-1.15-.23v.11a4.5 4.5 0 01-.28.83A4 4 0 0016 12a3.94 3.94 0 002.55-.94A3 3 0 0121 14a1 1 0 01-1 1h-2.35a6.67 6.67 0 01.26 1H20a2 2 0 002-2 4 4 0 00-2.69-3.76z">
+                                        </path>
+                                    </g>
+                                </svg></span>
+                            <b>Adult Only</b>
+                        </div>
+                    </div>
+                    <div class="hotel-price-btn">
+                        <button>Check Price</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Popular Search Hotels -->
+        <div class="tri-popular-searches">
+            <div class="head-cont">
+                <h2>Popular Searches</h2>
+                <div class="search-items">
+                    <p>Cities</p>
+                    <p>Destinatios</p>
+                </div>
+            </div>
+            <div class="popular-hotel">
+                <div class="popular-hotel-item">
+                    <div class="item-img">
+                        <img class="jNRmL7" alt=""
+                            src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/64/98/64989_v41.jpeg"
+                            itemprop="image" draggable="false">
+                    </div>
+                    <div class="item-info">
+                        <h3>Jaipur</h3>
+                        <b>5,200 </b><span>Hotels</span><br>
+                        <b>₹3316 </b><span>Avg.</span>
+                    </div>
+                </div>
+                <div class="popular-hotel-item">
+                    <div class="item-img">
+                        <img class="jNRmL7" alt=""
+                            src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/64/98/64981_v33.jpeg"
+                            itemprop="image" draggable="false">
+                    </div>
+                    <div class="item-info">
+                        <h3>Mumbai</h3>
+                        <b>5,300 </b><span>Hotels</span><br>
+                        <b>₹4316 </b><span>Avg.</span>
+                    </div>
+                </div>
+                <div class="popular-hotel-item">
+                    <div class="item-img">
+                        <img class="jNRmL7" alt=""
+                            src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/73/91/73918_v39.jpeg"
+                            itemprop="image" draggable="false">
+                    </div>
+                    <div class="item-info">
+                        <h3>Udaipur</h3>
+                        <b>2,970 </b><span>Hotels</span><br>
+                        <b>₹3316 </b><span>Avg.</span>
+                    </div>
+                </div>
+                <div class="popular-hotel-item">
+                    <div class="item-img">
+                        <img class="jNRmL7" alt=""
+                            src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/64/99/64993_v69.jpeg"
+                            itemprop="image" draggable="false">
+                    </div>
+                    <div class="item-info">
+                        <h3>Allahabad</h3>
+                        <b>700 </b><span>Hotels</span><br>
+                        <b>₹4524 </b><span>Avg.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Get Trivago App -->
+        <div class="tri-get-trivago">
+            <div class="download-info">
+                <div class="download-cont">
+                    <h2>Download the Trivago app</h2>
+                    <h6>Easily compare hotel prices for savings on the go</h6>
+                </div>
+                <div class="download-opt">
+                    <div class="download-btn">
+                        <div class="download-playstore">
+                            <img loading="lazy" class="x8wn8U UIZ9v8" alt="Google play store logo"
+                                src="https://imgcy.trivago.com//hardcodedimages/google_play_button.svg">
+                        </div>
+                        <div class="download-appstore">
+                            <img loading="lazy" class="Ut9YyS UIZ9v8" alt="Apple store logo"
+                                src="https://imgcy.trivago.com//hardcodedimages/ios_button.svg">
+                        </div>
+                    </div>
+                    <div class="download-qrcode">
+                        <img width="110" height="110" loading="lazy" alt="App install QR"
+                            src="https://www.trivago.in/_static/images/2023hai/app_install_qr_code.png" data-testid="app-install-qr-code">
+                    </div>
+                </div>
+            </div>
+            <div class="download-tri-logo">
+                <img src="./Trivago-Logo.wine.svg" width="450" height="450" alt="">
+            </div>
+        </div>
+        <!-- Footer -->
+
+        <div class="tri-footer">
+            <div class="footer-content">
+                <div class="footer-head">
+                    <h3>TRIVAGO</h3>
+                    <div class="social-link">
+                        <span class="Ji89fk IbFGmN" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="GuAJkS IbFGmN"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 9.999 10 9.999S22 17.523 22 12c0-5.523-4.477-10-10-10v0z" stroke="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15 7.616h-1.524c-.301 0-.607.313-.607.544v1.554h2.128a29.253 29.253 0 01-.261 2.282h-1.877v6.754h-2.797v-6.754H8.7V9.723h1.362V7.864c0-.34-.07-2.614 2.866-2.614H15v2.366z" fill="currentColor"></path></svg></span>
+                        <span class="Ji89fk IbFGmN" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="GuAJkS IbFGmN"><g fill="currentColor"><path d="M10 9l5 3-5 3V9z"></path><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm7 12.59A2.36 2.36 0 0116.59 17H7.41A2.36 2.36 0 015 14.59V9.41A2.36 2.36 0 017.41 7h9.18A2.36 2.36 0 0119 9.41z"></path></g></svg></span>
+                        <span class="Ji89fk IbFGmN" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="GuAJkS IbFGmN"><g fill="currentColor"><circle cx="12" cy="12" r="2.25"></circle><path d="M17.49 9.27A3.85 3.85 0 0017.26 8a2 2 0 00-.51-.77 2 2 0 00-.75-.49 3.85 3.85 0 00-1.25-.23H9.29A3.85 3.85 0 008 6.74a2 2 0 00-.77.51 2 2 0 00-.49.75 3.85 3.85 0 00-.23 1.25v5.46A3.85 3.85 0 006.74 16a2 2 0 00.51.77 2 2 0 00.77.51 3.85 3.85 0 001.25.23h5.46a3.85 3.85 0 001.27-.25A2.32 2.32 0 0017.26 16a3.85 3.85 0 00.23-1.25v-2.73c0-1.8.03-2.02 0-2.75zM12 15.46A3.46 3.46 0 1115.46 12 3.46 3.46 0 0112 15.46zm3.6-6.25a.81.81 0 11.81-.81.81.81 0 01-.81.81z"></path><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm6.7 12.78a4.82 4.82 0 01-.31 1.64 3.49 3.49 0 01-2 2 4.82 4.82 0 01-1.64.31c-.72 0-.95.05-2.78.05s-2.06 0-2.78-.05a4.82 4.82 0 01-1.64-.31 3.19 3.19 0 01-1.19-.78 3.19 3.19 0 01-.78-1.19 4.82 4.82 0 01-.31-1.64v-2.78-2.78a4.82 4.82 0 01.31-1.64 3.19 3.19 0 01.78-1.19 3.19 3.19 0 011.19-.78 5 5 0 011.64-.32h5.56a5 5 0 011.64.32 3.19 3.19 0 011.19.78 3.19 3.19 0 01.78 1.19 4.82 4.82 0 01.31 1.64c0 .72.05.95.05 2.78s.02 2.03-.02 2.75z"></path></g></svg></span>
+                        <span class="Ji89fk IbFGmN" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="GuAJkS IbFGmN"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.101c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10-10-4.48-10-10zm15.29-5.5h-1.84l-3.033 3.514-2.62-3.514H6l4.534 6.016-4.3 4.984h1.844l3.317-3.845 2.902 3.845H18l-4.73-6.34 4.02-4.66zm-1.467 9.884h-1.02L8.146 7.66h1.095l6.582 8.826z" fill="currentColor"></path></svg></span>
+                        <span class="Ji89fk IbFGmN" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="GuAJkS IbFGmN"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zM8.73 17.4H6.15V9.71h2.58zM7.44 8.66A1.33 1.33 0 117.46 6a1.33 1.33 0 110 2.66zM18 17.4h-2.57v-4.12c0-1-.37-1.74-1.31-1.74a1.39 1.39 0 00-1.31.94 1.66 1.66 0 00-.09.62v4.3h-2.57V9.71h2.57v1.09A2.54 2.54 0 0115 9.53c1.69 0 3 1.09 3 3.46z" fill="currentColor"></path></svg></span>
+                    </div>
+                </div>
+                <div class="select-country">
+                    <select name="" id="">
+                        <option value="">India</option>
+                        <option value="">Indonasia</option>
+                        <option value="">Singapore</option>
+                        <option value="">Malaysia</option>
+                        <option value="">Hong Kong</option>
+                    </select>
+                </div>
+                <div class="footer-nav-links">
+                    <div class="links-item-1">
+                        <p>Company</p>
+                        <p>Jobs</p>
+                        <p>Press</p>
+                        <p>Investor Relations</p>
+                        <p>Mobile apps - searching on the go</p>
+                        <p>trivago Business Studio</p>
+                    </div>
+                    <div class="links-item-2">
+                        <p>Help</p>
+                        <p>Learn how trivago works</p>
+                        <p>Terms and conditions</p>
+                        <p>Legal information</p>
+                        <p>Do Not Sell My Personal Information</p>
+                        <p>Privacy notice</p>
+                        <p>DSA information</p>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h3>Get exclusive inspiration for your next stay – <br>subscribe to our newsletter.</h3>
+                        <input type="email" placeholder="email address"> <button>Subscribe</button>
+                        <p>trivago N.V., Kesselstraße 5 – 7, 40221 Düsseldorf, Germany <br>
+                            Copyright 2025 trivago | All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

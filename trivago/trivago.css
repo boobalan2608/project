@@ -1,0 +1,575 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.head-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 17.5%;
+    align-items: center;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-link>h4 {
+    font-weight: 350;
+    display: flex;
+    gap: 5px;
+}
+
+hr {
+    opacity: .3;
+}
+
+/* Description */
+.tri-desc {
+    margin: 40px 17.5%;
+}
+
+.tri-desc>h1 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+/* Trip Search Box */
+.tri-trip-search-box {
+    display: flex;
+    margin: 5px 17.5%;
+    padding: 10px;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(126, 126, 126,0.5),0px 10px 10px rgba(126, 126, 126, 0.226);
+}
+
+/* Trip Destination */
+.trip-desti {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+
+.trip-desti:hover {
+    cursor: pointer;
+    background-color: rgba(118, 116, 116, 0.1);
+}
+
+.search-logo {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.desti-info {
+    margin-left: 12px;
+}
+
+.desti-info>span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.desti-info>h3 {
+    font-size: 14px;
+}
+
+/* Trip Check in */
+
+.trip-chk-in {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+}
+
+.calen-logo {
+    margin-top: 10px;
+}
+
+.chk-in-info {
+    margin-left: 12px;
+}
+
+.chk-in-info>span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.chk-in-info>h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Trip Check out */
+.trip-chk-out {
+    margin-left: 10px;
+    width: 18%;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    height: 60px;
+}
+
+.trip-chk-out>span {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    font-weight: 300;
+}
+
+.trip-chk-out>h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Trip Guest and Rooms */
+.trip-guest {
+    margin-left: 10px;
+    display: flex;
+    width: 25%;
+    align-items: center;
+}
+
+.trip-guest:hover {
+    cursor: pointer;
+}
+
+.guest-logo {
+    margin-top: 10px;
+
+}
+
+.guest-room-info {
+    margin-left: 10px;
+}
+
+.guest-room-info>span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.guest-room-info>h4 {
+    font-size: 15px;
+}
+
+.search-btn>button {
+    padding: 12px 35px;
+    border: none;
+    background-color: #0078c2;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.search-btn>button:hover {
+    cursor: pointer;
+}
+
+/* Advertisment Bar */
+.tri-advertisment-bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 17.5%;
+    align-items: center;
+}
+
+.tri-advertisment-bar>img {
+    transform: scale(.5);
+}
+
+.tri-advertisment-bar>span {
+    font-size: 12px;
+    font-weight: 300;
+}
+/* booking portal */
+.tri-booking-portal {
+    height: 88vh;
+    margin: 0px 17.5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    
+}
+
+.booking-bg {
+    border-top-left-radius: 20px;
+    background-image: url('https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_380,q_45,w_980/categoryimages/64/98/64981_v33.jpeg');
+    border-top-right-radius: 20px;
+    height: 54%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px -100px 100px -50px rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+}
+.booking-bg-theme{
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    background-image: linear-gradient(to bottom ,rgb(36, 28, 28) ,rgba(0, 0, 0, 0));
+}
+.tri-booking-portal>h1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    font-size: 24px;
+}
+
+.booking-schedule {
+    position: absolute;
+    top: 120px;
+    width: 688px;
+    height: 424px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px rgba(182, 180, 180, 0.773);
+    background-color: white;
+    margin: 60px 15% 0px 15%;
+    border-radius: 20px;
+    transform: scale(1.05);
+}
+
+.booking-loca {
+    display: flex;
+    margin-left: 7px;
+}
+
+.booking-loca>button {
+    border: 1px solid rgba(167, 167, 167, 0.766);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 13px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 10px;
+    transform: scale(.8);
+    transition: .1s;
+    cursor: pointer;
+}
+.booking-loca>button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+.booking-schedule>span {
+    display: block;
+    margin: 10px 20px 5px 20px;
+    font-weight: 350;
+    font-size: 12px;
+}
+
+.schedule-months {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 290px;
+    margin-left: 12px;
+    padding: 5px 7px;
+}
+.month-price-schedule{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 48%;
+}
+.months-list {
+    padding:12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(156, 156, 156, 0.726);
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+.months-list:hover{
+    background-color: rgba(118, 116, 116, 0.184);
+}
+.months-list > h4{
+    font-size: 15px;
+}
+/* Hotel Sugesstions */
+
+.tri-hotels{
+    margin: 0px 17.5%;
+    /* border: 1px solid black; */
+}
+.tri-hotels > h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.hotel-names{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.323);
+    width: fit-content;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.hotel-names > span{
+    margin-left: 10px;
+}
+.hotel-names > span:first-child{
+    display: inline-block;
+    border-bottom: 2px solid black;
+    line-height: 40px;
+    font-weight: 600;
+}
+.hotel-list{
+    display: flex;
+    gap: 25px;
+}
+.hotel-item{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    box-shadow: 0 0 10px rgb(138, 127, 127);
+    border-radius: 10px;
+    gap: 10px;
+}
+.hotel-item > img{
+    width: 310px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.hotel-item > .hotel-desc{
+    padding-left: 10px;
+}
+.hotel-item > .hotel-desc > p{
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 3px;
+    padding-left: 2px;
+}
+.hotel-item > .hotel-loc{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding-left: 3px;
+}
+.hotel-loc > p{
+    font-size: 13px;
+}
+.hotel-item > .hotel-feature{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 20px;
+    padding-left: 8px;
+}
+.hotel-feature > .feature-item{
+    display: flex;
+    gap: 3px;
+}
+.hotel-item > .hotel-price-btn{
+    width: 100%;
+}
+.hotel-item > .hotel-price-btn > button{
+    width: 95%;
+    margin-left: 8px;
+    padding: 10px 15px;
+    background-color: #0078c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Popular Searches */
+.tri-popular-searches{
+    margin: 50px 17.5%;
+}
+.tri-popular-searches > .head-cont > .search-items{
+    display: flex;
+    gap: 10px;
+}
+.head-cont > .search-items{
+    margin-top: 10px;
+}
+.head-cont > .search-items > p{
+    cursor: pointer;
+}
+.search-items > p:first-child{
+    border-bottom: 3px solid black;
+    padding-bottom: 6px;
+}
+.popular-hotel{
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.popular-hotel-item{
+    box-shadow:  0 0 10px grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+.popular-hotel-item > .item-img > img{
+    width: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 170px;
+}
+.popular-hotel-item > .item-info {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.popular-hotel-item > .item-info > h3{
+    margin-bottom: 5px;
+}
+.tri-get-trivago{
+    margin: 0 17.5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d5efff;
+    height: 250px;
+    border-radius: 10px;
+}
+.tri-get-trivago > .download-info{
+    width: 50%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.download-info > .download-cont > h6{
+    font-size: 15px;
+    font-weight: 650;
+    text-align: justify;
+    margin-top: 7px;
+}
+.download-opt{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.download-opt > .download-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tri-get-trivago > .download-tri-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 20px; */
+    width: fit-content;
+}
+.download-tri-logo > img{
+    padding-right: 20px;
+}
+/* Footer */
+
+.tri-footer{
+    background-color: #171717;
+    height: 410px;
+}
+.tri-footer > .footer-content{
+    margin: 40px 17.5%;
+    color: white;
+    padding-top: 60px;
+}
+.footer-content > .footer-head{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content > .select-country{
+    width: 300px;
+    margin-top: 20px;
+    height: 40px;
+}
+.footer-content > .select-country > select {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 10px;
+    color: white;
+
+}
+.select-country > select > option {
+    color: black;
+}
+
+.footer-content > .footer-nav-links{
+    padding-top: 40px;
+    display: flex;
+    height: 100%;
+    gap: 2px;
+    justify-content: space-between;
+}
+.footer-nav-links > .links-item-1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.footer-nav-links > .links-item-1 > p{
+    font-weight: 200;
+    font-size: 15px;
+}
+.footer-nav-links > .links-item-2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.footer-nav-links > .links-item-2 > p{
+    font-weight: 200;
+    font-size: 15px;
+}
+.footer-nav-links > .footer-newsletter{
+
+}
+.footer-nav-links > .footer-newsletter > h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer-nav-links > .footer-newsletter > input{
+    border: none;
+    border-bottom: 2px solid blue;
+    background-color: inherit;
+    width: 250px;
+    margin: 20px 0px;
+    outline: none;
+    color: white;
+    padding: 10px;
+}
+.footer-nav-links > .footer-newsletter > input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+.footer-nav-links > .footer-newsletter > button{
+    padding: 12px 38px;
+    margin-left: 5px;
+    background-color: #0078c2;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+}
